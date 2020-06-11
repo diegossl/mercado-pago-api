@@ -15,13 +15,13 @@ Finalmente, digite o seguinte comando no terminal para iniciar o servidor:
 ```bash
 npm start
 ```
-Agora o sistema está pronto para ser utilizado através da rota local:
+Agora o sistema está pronto para ser utilizado através da rota:
 
 [http://localhost:3000/purchase](http://localhost:3000/purchase)
 
 Basta enviar os dados para esta rota e o pagamento será processado.
 
-### Exemmplo de entrada de dados:
+### Exemplo de entrada de dados:
 
 Um objeto JSON contendo um array de produtos e o pagador(a) da compra.
  
@@ -47,7 +47,7 @@ Um objeto JSON contendo um array de produtos e o pagador(a) da compra.
   }
 }
 ```
-### Exemmplo de saída de dados:
+### Exemplo de saída de dados:
 
 Um link para o formulário web de pagamento do Mercado Pago.
 
