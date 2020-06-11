@@ -14,31 +14,13 @@ class PaymentService {
   }
 
   static async checkout (data) {
-    // const items = [{
-    //   id: data.product.id,
-    //   title: data.product.title,
-    //   description : data.product.description,
-    //   category_id: data.product.category_id,
-    //   quantity: data.product.quantity,
-    //   currency_id: 'BRL',
-    //   unit_price: data.product.unit_price
-    // }]
-    // const payer = {
-    //   name: data.payer.name,
-    //   surname: data.payer.surname,
-    //   email: data.payer.email,
-    //   identification: {
-    //     type: data.payer.identification.type,
-    //     number: data.payer.identification.number
-    //   },
-    // }
     const items = data.products
     const payer = data.payer
     const purchase = {
       items: items,
       payer: payer,
       back_urls: {
-        success: "http://localhost:3000",
+        success: data.successPageLink,
         failure: data.failurePageLink,
         pending: data.pendingPageLink
       },

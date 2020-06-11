@@ -21,7 +21,9 @@ Agora o sistema está pronto para ser utilizado através da rota local:
 
 Basta enviar os dados para esta rota e o pagamento será processado.
 
-### Exemmplos de entrada de dados:
+### Exemmplo de entrada de dados:
+
+Um objeto JSON contendo um array de produtos e o pagador(a) da compra.
  
 ```javascript
 {
@@ -31,7 +33,8 @@ Basta enviar os dados para esta rota e o pagamento será processado.
     "description": "Este é um teclado de última geração.",
     "category_id": "Eletrônicos",
     "quantity": 1,
-    "unit_price": 100
+    "unit_price": 100,
+    "currency_id": "BRL"
   }],
   "payer": {
     "name": "Diego",
@@ -42,6 +45,15 @@ Basta enviar os dados para esta rota e o pagamento será processado.
       "number": "000.000.000-00"
     }
   }
+}
+```
+### Exemmplo de saída de dados:
+
+Um link para o formulário web de pagamento do Mercado Pago.
+
+```javascript
+{
+  "link": "https://sandbox.mercadopago.com.br/checkout/v1/redirect?pref_id=582599346-5beacae6-271f-4254-90ea-5960a00046c0"
 }
 ```
 
@@ -58,8 +70,8 @@ A API oferece pagamento com os principais meios de pagamento do país:
   - DINERS CLUB INTERNATIONAL
   - MERCADO LIVRE
 * Cartão de débito virtual Caixa;
-* À vista com boleto bancário
-* Pagamentos com PEC (em lotéricas)
+* À vista com boleto bancário;
+* Pagamentos com PEC (em lotéricas);
 * Compras de convidados. Não é necessário criar uma conta do Mercado Pago para poder fazer o pagamento.
 
 ## Licença
