@@ -12,7 +12,7 @@ module.exports = {
     } catch (error) {
       return response
       .status(500)
-      .send({ message: 'Não foi possível realizar o pagamento.' })
+      .send({ message: 'Erro interno do servidor' })
     }
   }
 }
