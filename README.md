@@ -15,7 +15,7 @@ Finalmente, digite o seguinte comando no terminal para iniciar o servidor:
 ```bash
 npm start
 ```
-Agora o sistema está pronto para ser utilizado através da rota local:
+Agora o sistema está pronto para ser utilizado através da rota:
 
 [http://localhost:3000/purchase/dados_da_compra](http://localhost:3000/purchase/)
 
