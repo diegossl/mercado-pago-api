@@ -21,7 +21,7 @@ Agora o sistema está pronto para ser utilizado através da rota:
 
 Basta enviar os dados para esta rota e o pagamento será processado.
 
-### Exemplo de entrada de dados:
+## Exemplo de entrada de dados:
 
 Um objeto JSON contendo um array de produtos e o pagador(a) da compra.
  
@@ -47,7 +47,7 @@ Um objeto JSON contendo um array de produtos e o pagador(a) da compra.
   }
 }
 ```
-### Exemplo de saída de dados:
+## Exemplo de saída de dados:
 
 Um link para o formulário web de pagamento do Mercado Pago.
 
