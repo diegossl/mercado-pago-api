@@ -76,4 +76,4 @@ A API oferece pagamento com os principais meios de pagamento do país:
 
 ## Licença
 
-Não se aplica.
+MIT
