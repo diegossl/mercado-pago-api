@@ -1,29 +1,29 @@
-# API de Integração com o Mercado Pago
+# Mercado Pago Integration API
 
-Esta API realiza pagamentos no sistema do Mercado Pago utilizando o sistema deles de Checkout. O Checkout Mercado Pago é a integração que permite cobrar através do  formulário web do Mercado Pago através de qualquer dispositivo de forma simples, rápida e segura.
+This API makes payments in the Mercado Pago system using their Checkout system. Mercado Pago Checkout is the integration that allows you to charge through the Mercado Pago web form through any device in a simple, fast and secure way.
 
 ## Setup
 
-Para executar o projeto, será necessário instalar as dependências digitando o seguinte comando no terminal:
+To execute the project, it will be necessary to install as dependencies by typing the following command in the terminal:
 
 ```bash
 npm install
 ```
 
-Finalmente, digite o seguinte comando no terminal para iniciar o servidor:
+Finally, type the following command in the terminal to start the server:
 
 ```bash
 npm start
 ```
-Agora o sistema está pronto para ser utilizado através da rota:
+The system is now ready to be used via the route:
 
-[http://localhost:3000/purchase/dados_da_compra](http://localhost:3000/purchase/)
+[http://localhost:3000/purchase/purchase](http://localhost:3000/purchase/)
 
-Basta enviar os dados para esta rota e o pagamento será processado.
+Just send the data for this route and the payment will be processed.
 
-## Exemplo de entrada de dados:
+## Example of data entry:
 
-Um objeto JSON contendo um array de produtos e o pagador(a) da compra.
+A JSON object containing an array of products and the payer of the purchase.
  
 ```javascript
 {
@@ -47,9 +47,9 @@ Um objeto JSON contendo um array de produtos e o pagador(a) da compra.
   }
 }
 ```
-## Exemplo de saída de dados:
+## Example of output:
 
-Um link para o formulário web de pagamento do Mercado Pago.
+A link to the Mercado Pago payment form.
 
 ```javascript
 {
@@ -59,9 +59,9 @@ Um link para o formulário web de pagamento do Mercado Pago.
 
 ## Features
 
-A API oferece pagamento com os principais meios de pagamento do país:
+The API offers payment with the country's main payment methods:
 
-* Cartão de crédito em até 12 vezes para compras online;
+* Credit card up to 12 times for online purchases;
   - VISA
   - MASTERCARD
   - HIPERCARD
@@ -69,11 +69,11 @@ A API oferece pagamento com os principais meios de pagamento do país:
   - ELO
   - DINERS CLUB INTERNATIONAL
   - MERCADO LIVRE
-* Cartão de débito virtual Caixa;
-* À vista com boleto bancário;
-* Pagamentos com PEC (em lotéricas);
-* Compras de convidados. Não é necessário criar uma conta do Mercado Pago para poder fazer o pagamento.
+* Virtual debit card Caixa;
+* Cash with bank slip;
+* PEC payments (in lottery);
+* Guest purchases. It is not necessary to create a Mercado Pago account in order to make the payment.
 
-## Licença
+## License
 
 MIT
