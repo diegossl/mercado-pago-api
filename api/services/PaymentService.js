@@ -2,14 +2,12 @@
 
 const MercadoPago = require('mercadopago') 
 
-const ACCESS_TOKEN = 'TEST-7654684051775468-061021-26f266ab36c8291dcf6b72a8524d188a-582599346'
-
 class PaymentService {
 
   static setup () {
     MercadoPago.configure({
       sandbox: true,
-      access_token: ACCESS_TOKEN
+      access_token: process.env.ACCESS_TOKEN
     })
   }
 

@@ -10,6 +10,12 @@ To execute the project, it will be necessary to install as dependencies by typin
 npm install
 ```
 
+Then, create a file called .env and copy to the contents of the file .env.exemple, which already exists in the project and enter your credentials.
+
+Credentials can be obtained from the following website:
+
+[https://www.mercadopago.com.br/developers](https://www.mercadopago.com.br/developers)
+
 Finally, type the following command in the terminal to start the server:
 
 ```bash
@@ -17,7 +23,7 @@ npm start
 ```
 The system is now ready to be used via the route:
 
-[http://localhost:3000/purchase/purchase](http://localhost:3000/purchase/)
+[http://localhost:3000/purchase](http://localhost:3000/purchase)
 
 Just send the data for this route and the payment will be processed.
 
